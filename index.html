@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="navigation">
+		<div class="logo">
+			<img src="/images/logo.svg" width="70px" alt="insecure logo" srcset="">
+			<img src="/images/icon-close.svg" alt="" srcset="close menu buttton" id="close-button">
+			<img src="/images/icon-hamburger.svg" alt="" srcset="open menu button" id="menu-button">
+		</div>
+
+		<div class="menu" id="menu">
+			<ul>
+				<li>
+					<a href="#">
+						How we work
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Blog
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Account
+					</a>
+				</li>
+				<li class="plan">
+					<a href="#">
+						view plans
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="">
+		<div class="intro">
+			<div class="container">
+				<div class="box">
+					<div class="box-word">
+						<h1>
+							Humanizing <br>  your insurance.
+						</h1> 
+						<p>
+							Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.
+						</p>
+						<div class="link button ">
+							<a href="" class="button button-grey">
+								View plan
+							</a> 
+						</div>
+						
+						</p>
+					</div>
+					<div class="box-image">
+							<div class="box-image-holder">
+								
+							</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="info">
+			<div class="container">
+				<div class="info-header">
+					<h1>
+						We're diferent
+					</h1>
+				</div>
+				<div class="info-details-container">
+					<div class="info-details">
+						<img src="/images/icon-snappy-process.svg" alt="" srcset="">
+
+						<h4>
+							Sanppy process
+						</h4>
+						<p>
+							Our application process can be completed in minutes, not hours. Don’t get 
+							stuck filling in tedious forms.
+						</p>
+					</div>
+					<div class="info-details">
+						<img src="/images/icon-snappy-process.svg" alt="" srcset="">
+
+						<h4>
+							affordable prices
+						</h4>
+						<p>
+							We don’t want you worrying about high monthly costs. Our prices may be low, 
+							but we still offer the best coverage possible.
+						</p>
+					</div>
+					<div class="info-details">
+						<img src="/images/icon-snappy-process.svg" alt="" srcset="">
+
+						<h4>
+							People First
+						</h4>
+						<p>
+							Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+							sure you’re covered when you need it.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="more">
+			<div class="container">
+				<div class = 'more-container'>
+					<div class="caption">
+						<h1>
+							Find out more about how we work
+						</h1>
+					</div>
+					<div class="link">
+						<p class="button">
+							<a href="" class="button button-grey">
+								How we work
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="container">
+			<div class="flex">
+				<div class="logo">
+					<img src="/images/logo.svg" alt="" srcset="">
+				</div>
+				<div class="social-link">
+					<img src="/images/icon-facebook.svg" alt="" srcset="">
+					<img src="/images/icon-twitter.svg" alt="" srcset="">
+					<img src="/images/icon-pinterest.svg" alt="" srcset="">
+					<img src="/images/icon-instagram.svg" alt="" srcset="">
+				</div>
+			</div>
+			<div class="flex-container links">
+				<div>
+					<p>
+						Our company
+					</p>
+					<ul>
+						<li><a href = "">How we work</a></li>
+						<li><a href = "">Why Insure?</a></li>
+						<li><a href = "">View plans</a></li>
+						<li><a href = "">Reviews</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<p>
+						Help me
+					</p>
+
+					<ul>
+						<li><a href = "">FAQ</a></li>
+						<li><a href = "">Terms of use</a></li>
+						<li><a href = "">Privacy policy</a></li>
+						<li><a href = "">cookies</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<p>
+						Contact
+					</p>
+					<ul>
+						<li><a href = "">
+							Sales
+							</a>
+						</li>
+						<li><a href = "">
+							Support
+						</a></li>
+						<li><a href = "">
+							Live chat
+						</a></li>
+					</ul>
+				</div>
+				
+				<div>
+					<p>
+						Others
+					</p>
+					<ul>
+						<li><a href = "">Careers</a></li>
+						<li><a href = "">Press</a></li>
+						<li><a href = "">Licenses</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="attribution" style="padding: 20px;">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+		Coded by <a href="#">Afowowe Olumide Victor</a>.
+	</div>
+
+
+	<script>
+		let menuButton = document.getElementById('menu-button')
+		let closeButton = document.getElementById('close-button')
+		let menu = document.getElementById('menu')
+
+		menuButton.addEventListener('click', (ev) =>{
+			ev.preventDefault()
+			menuButton.style.display = 'none'
+			closeButton.style.display = 'block'
+			menu.style.display = 'block'
+
+		})
+		closeButton.addEventListener('click', (ev) =>{
+			ev.preventDefault()
+			menuButton.style.display = 'block'
+			closeButton.style.display = 'none'
+			menu.style.display = 'none'
+
+		})
+	</script>
+</body>
+</html>
